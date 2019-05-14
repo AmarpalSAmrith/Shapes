@@ -1,18 +1,18 @@
 package AmarpalAmrith.TrainingMaterials;
 
-public class Rectangle {
-    private double height;
+public class Rectangle implements TwoDimensionalShape {
+    private double length;
     private double width;
     private String colour;
 
-    public Rectangle(double height, double width, String colour) {
-        this.height = height;
+    public Rectangle(double length, double width, String colour) {
+        this.length = length;
         this.width = width;
         this.colour = colour;
     }
 
-    public double getHeight() {
-        return height;
+    public double getLength() {
+        return length;
     }
 
     public double getWidth() {
@@ -24,13 +24,13 @@ public class Rectangle {
     }
 
     public double getArea() {
-        return height * width;
+        return length * width;
     }
 
-    public double getPermimeter() {
-        return (height * 2) + (width * 2);
+    public double getPerimeter() {
+        return (length * 2) + (width * 2);
     }
     public String toString() {
-        return "Height = " + height + "\nWidth = " + width + "\nColour = " + colour;
+        return getType() + ":\n" + "Height = " + length + "\nWidth = " + width + "\nColour = " + colour;
     }
 }

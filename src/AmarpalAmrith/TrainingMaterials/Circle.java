@@ -1,6 +1,6 @@
 package AmarpalAmrith.TrainingMaterials;
 
-public class Circle {
+public class Circle implements TwoDimensionalShape {
     private double radius;
     private String colour;
 
@@ -21,10 +21,10 @@ public class Circle {
         return Math.PI * (radius * radius);
     }
 
-    public double getCircumference() {
+    public double getPerimeter() {
         return Math.PI * (radius * 2);
     }
     public String toString() {
-        return "Radius = " + radius + "\nColour = " + colour;
+        return getType() + ":\n" + "Radius = " + radius + "\nColour = " + colour;
     }
 }

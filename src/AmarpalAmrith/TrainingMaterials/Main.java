@@ -7,7 +7,9 @@ public class Main {
     public static void main(String[] args) {
         Rectangle rectangle = new Rectangle(20.0, 10.0, "Red");
         Circle circle = new Circle(50.0, "Orange");
-        separatedMsg("Rectangle:\n" + rectangle.toString());
-        separatedMsg("Circle:\n" + circle.toString());
+        Square square = new Square(10.0, "Blue");
+        separatedMsg(rectangle.toString());
+        separatedMsg(circle.toString());
+        separatedMsg(square.toString());
     }
 }
