@@ -3,6 +3,7 @@ package AmarpalAmrith.TrainingMaterials.Shapes2D;
 import AmarpalAmrith.TrainingMaterials.ShapeTypes.TwoDimensionalShape;
 
 public class Circle implements TwoDimensionalShape {
+
     private double radius;
     private String colour;
 
@@ -20,12 +21,13 @@ public class Circle implements TwoDimensionalShape {
     }
 
     public double getArea() {
-        return Math.PI * (radius * radius);
+        return Math.PI * Math.pow(radius,2);
     }
 
     public double getPerimeter() {
-        return Math.PI * (radius * 2);
+        return Math.PI * Math.pow(radius,2);
     }
+
     public String toString() {
         return getType() + ":\n" + "Radius = " + radius + "\nColour = " + colour;
     }

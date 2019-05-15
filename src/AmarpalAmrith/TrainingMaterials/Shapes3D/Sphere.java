@@ -31,11 +31,11 @@ public class Sphere implements ThreeDimensionalShape {
 
     @Override
     public double getSurfaceArea() {
-        return 4 * Math.PI * (radius * radius);
+        return 4 * Math.PI * Math.pow(radius,2);
     }
 
     @Override
     public double getVolume() {
-        return (4 / 3) * Math.PI * (radius * radius * radius);
+        return (4 * Math.PI * Math.pow(radius,3))/3;
     }
 }
