@@ -2,6 +2,7 @@ package AmarpalAmrith.TrainingMaterials.Shapes3D;
 
 import AmarpalAmrith.TrainingMaterials.ShapeTypes.ThreeDimensionalShape;
 import AmarpalAmrith.TrainingMaterials.ShapeTypes.TwoDimensionalShape;
+import AmarpalAmrith.TrainingMaterials.Utilities;
 
 public class Prism implements ThreeDimensionalShape {
 
@@ -45,6 +46,7 @@ public class Prism implements ThreeDimensionalShape {
     public String prettyPrint() {
         return getType() +
                 "\n" + base.prettyPrint() +
+                "\n" +Utilities.getEqualsSigns(getClass().getSimpleName()) +
                 "\n" + getClass().getSimpleName() +
                 "\nHeight = " + height +
                 "\nColour = " + getColour();

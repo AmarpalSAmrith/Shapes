@@ -13,12 +13,17 @@ public class Utilities {
         } else {
             correctedMsg = msg;
         }
-        StringBuilder s = new StringBuilder();
-        for (int i = 0; i < correctedMsg.length(); i++) {
-            s.append("=");
-        }
+        String s = getEqualsSigns(correctedMsg);
         System.out.println(s.toString());
         System.out.println();
+    }
+
+    public static String getEqualsSigns(String wordLength) {
+        StringBuilder s = new StringBuilder();
+        for (int i = 0; i < wordLength.length(); i++) {
+            s.append("=");
+        }
+        return s.toString();
     }
 
     public static int requestInt(String msg) {

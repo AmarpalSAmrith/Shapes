@@ -32,6 +32,7 @@ public class Rectangle implements TwoDimensionalShape {
     public double getPerimeter() {
         return 2 * (length + width);
     }
+
     public String toString() {
         return getType() +
                 ":\nHeight = " + length +
