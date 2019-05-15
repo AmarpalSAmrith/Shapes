@@ -1,4 +1,6 @@
-package AmarpalAmrith.TrainingMaterials;
+package AmarpalAmrith.TrainingMaterials.Shapes2D;
+
+import AmarpalAmrith.TrainingMaterials.ShapeTypes.TwoDimensionalShape;
 
 public class Rectangle implements TwoDimensionalShape {
     private double length;
@@ -31,6 +33,9 @@ public class Rectangle implements TwoDimensionalShape {
         return (length * 2) + (width * 2);
     }
     public String toString() {
-        return getType() + ":\n" + "Height = " + length + "\nWidth = " + width + "\nColour = " + colour;
+        return getType() +
+                ":\nHeight = " + length +
+                "\nWidth = " + width +
+                "\nColour = " + colour;
     }
 }

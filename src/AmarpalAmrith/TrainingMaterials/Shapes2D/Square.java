@@ -1,4 +1,4 @@
-package AmarpalAmrith.TrainingMaterials;
+package AmarpalAmrith.TrainingMaterials.Shapes2D;
 
 public class Square extends Rectangle {
 

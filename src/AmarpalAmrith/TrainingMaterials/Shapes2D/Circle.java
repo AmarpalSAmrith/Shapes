@@ -1,4 +1,6 @@
-package AmarpalAmrith.TrainingMaterials;
+package AmarpalAmrith.TrainingMaterials.Shapes2D;
+
+import AmarpalAmrith.TrainingMaterials.ShapeTypes.TwoDimensionalShape;
 
 public class Circle implements TwoDimensionalShape {
     private double radius;
