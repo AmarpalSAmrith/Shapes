@@ -25,7 +25,7 @@ public class Circle implements TwoDimensionalShape {
     }
 
     public double getPerimeter() {
-        return Math.PI * Math.pow(radius,2);
+        return Math.PI * radius * 2;
     }
 
     public String toString() {

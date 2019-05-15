@@ -1,11 +1,7 @@
 package AmarpalAmrith.TrainingMaterials;
 
-import AmarpalAmrith.TrainingMaterials.Shapes3D.Prism;
-import AmarpalAmrith.TrainingMaterials.Shapes2D.Circle;
-import AmarpalAmrith.TrainingMaterials.Shapes2D.Rectangle;
-import AmarpalAmrith.TrainingMaterials.Shapes2D.Square;
-import AmarpalAmrith.TrainingMaterials.Shapes3D.Sphere;
-
+import AmarpalAmrith.TrainingMaterials.Shapes2D.*;
+import AmarpalAmrith.TrainingMaterials.Shapes3D.*;
 import static AmarpalAmrith.TrainingMaterials.Utilities.*;
 
 public class Main {

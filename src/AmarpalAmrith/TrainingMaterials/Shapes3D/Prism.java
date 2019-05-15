@@ -4,9 +4,9 @@ import AmarpalAmrith.TrainingMaterials.ShapeTypes.ThreeDimensionalShape;
 import AmarpalAmrith.TrainingMaterials.ShapeTypes.TwoDimensionalShape;
 
 public class Prism implements ThreeDimensionalShape {
+
     private TwoDimensionalShape base;
     private double height;
-    private String colour;
 
     public TwoDimensionalShape getBase() {
         return base;
@@ -16,10 +16,9 @@ public class Prism implements ThreeDimensionalShape {
         return height;
     }
 
-    public Prism(TwoDimensionalShape base, double height, String colour) {
+    public Prism(TwoDimensionalShape base, double height) {
         this.base = base;
         this.height = height;
-        this.colour = colour;
     }
 
     @Override
@@ -34,7 +33,7 @@ public class Prism implements ThreeDimensionalShape {
 
     @Override
     public String getColour() {
-        return colour;
+        return base.getColour();
     }
 
     @Override
@@ -48,6 +47,6 @@ public class Prism implements ThreeDimensionalShape {
                 "\n" + base.prettyPrint() +
                 "\n" + getClass().getSimpleName() +
                 "\nHeight = " + height +
-                "\nColour = " + colour;
+                "\nColour = " + getColour();
     }
 }

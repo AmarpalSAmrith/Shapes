@@ -18,6 +18,7 @@ public class Utilities {
             s.append("=");
         }
         System.out.println(s.toString());
+        System.out.println();
     }
 
     public static int requestInt(String msg) {

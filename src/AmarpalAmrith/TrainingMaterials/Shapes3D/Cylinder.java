@@ -1,10 +1,10 @@
 package AmarpalAmrith.TrainingMaterials.Shapes3D;
 
-import AmarpalAmrith.TrainingMaterials.ShapeTypes.TwoDimensionalShape;
+import AmarpalAmrith.TrainingMaterials.Shapes2D.Circle;
 
-public class Cylinder extends Prism{
+public class Cylinder extends Prism {
 
-    public Cylinder(TwoDimensionalShape base, double height, String colour) {
-        super(base, height, colour);
+    public Cylinder(double radius, double height, String colour) {
+        super(new Circle(radius, colour), height);
     }
 }

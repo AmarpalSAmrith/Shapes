@@ -1,11 +1,11 @@
 package AmarpalAmrith.TrainingMaterials.Shapes3D;
 
-import AmarpalAmrith.TrainingMaterials.ShapeTypes.TwoDimensionalShape;
+import AmarpalAmrith.TrainingMaterials.Shapes2D.Rectangle;
 
 public class Cuboid extends Prism {
 
-    public Cuboid(TwoDimensionalShape base, double height, String colour) {
-        super(base, height, colour);
+    public Cuboid(double width, double height, double depth, String colour) {
+        super(new Rectangle(width, height, colour), depth);
     }
 
 }
